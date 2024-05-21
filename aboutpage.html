@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About_Image Gallery Project</title>
+  <style>
+    /* CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      background-image: url(about_background.png);
+    }
+
+    .container {
+        max-width: 1250px;
+        margin: 0px auto;
+        padding: 8px;
+        position: relative;
+        color: rgb(255, 255, 255); 
+        z-index: 1; 
+    }
+    
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('background image.jpg');
+        background-size: cover;
+        filter: blur(5px);
+        z-index: 0; /* Set a lower z-index for the background image */
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: rgb(255, 255, 255);
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" class="gradient-text">
+    <!-- <div class="background-image"></div> -->
+    <h1>About Image Gallery Project</h1>
+    
+    <h2 style="color: rgba(255, 255, 255, 0.75);">Overview</h2>
+    <p>Welcome to the Image Gallery Project! This project aims to provide users with a visually appealing way to explore and filter images from various categories. Whether you're looking for nature scenes, cityscapes, archival photos, or images related to spirituality or current events, our gallery has something for everyone.</p>
+
+    <h2 style="color: rgba(255, 255, 255, 0.75);">Technologies Used</h2>
+    <ul>
+      <li><strong>HTML, CSS, and JavaScript:</strong> The project is built using these fundamental web technologies to create the structure, style, and functionality of the gallery.</li>
+      <li><strong>Unsplash API:</strong> We utilize the Unsplash API to dynamically fetch high-quality images from their vast collection based on user-selected filters.</li>
+      <li><strong>FontAwesome:</strong> FontAwesome icons are used for adding visual elements such as the submit button and social media links.</li>
+    </ul>
+
+    <h2 style="color: rgba(255, 255, 255, 0.75);">How It Works</h2>
+    <p>Upon visiting the gallery page, users are greeted with a selection of filter buttons representing different image categories. They can either click on these buttons to view images from a specific category or use the search bar to search for images based on keywords. Additionally, users can submit their own photos to be considered for inclusion in the gallery.</p>
+
+    <h2 style="color: rgba(255, 255, 255, 0.75);">About the Developer</h2>
+    <p>This website is developed by <a href="https://www.linkedin.com/in/abhisekumarjha/" style="text-decoration: none;">Abhi Jha,</a> a Full Stack Developer. To know more about me, please visit my <a href="https://www.linkedin.com/in/abhisekumarjha/" target="_blank">LinkedIn profile</a>. Thank you.</p>
+
+    <h2 style="color: rgba(255, 255, 255, 0.75);">Get Started</h2>
+    <p>Ready to explore the Image Gallery? <a href="index.html">Click here </a> to visit the gallery page and start discovering your favorite images!</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(body_background.png);
+  }
+
+  .syne-tactile-regular {
+    font-family: "Syne Tactile", system-ui;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px 5px 12.5px 12.5px;
+    z-index: 1;
+  }
+  
+  .submit-photo-btn {
+    margin: 10px 0px 7.5px 100px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 1px solid #0000;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #0000 50%, #0b151e05 100%), #fff;
+    color: #767676;
+    border-color: #d1d1d1;
+  }
+  
+  .search-bar {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 75px 7.5px 0px;
+    margin-left: auto; /* Ensure the search bar aligns to the right */
+  }
+  
+  .gallery {
+    max-width: 1100px;
+    margin: 25px auto;
+    margin-top: 120px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.747);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .text{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 2px;
+    margin-top: 7px;
+    font-size: 3em;
+    font-weight: bold;
+    background: linear-gradient(to right, #8a1ef0, #ee9d2ce7);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .filter {
+    text-align: center;
+  }
+  
+  .filter-btn {
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #4776E6, #8E54E9);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  .filter-btn:hover {
+    transform: translateY(-2px); /* Move the button up slightly on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  }
+  
+  .images {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .images img {
+    width: calc(20% - 5px);
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .images img:nth-child(2n) {
+    width: calc(25% - 15px);
+  }
+
+  .images img:nth-child(3n) {
+    width: calc(25% - 20px);
+  }
+  
+  .images img:hover {
+    transform: scale(1.07);
+    transition: transform 0.3s ease;
+  }
+  
+  .footer {
+    background: rgba(15, 15, 15, 0.596); 
+    backdrop-filter: blur(10px); 
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; 
+  }
+  
+  .footer:before {
+    content: "";
+    display: block;
+    height: 2px;
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* Gradient line above the footer */
+    margin-bottom: 10px;
+  }
+
+  .footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    position: relative;
+  }
+
+  .footer a:hover {
+    color: #3d5ff5;
+  }
+
+  .about-page p{
+    text-align: right;
+    margin: -18px 75px 0 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(to right, #d2eeee, #ee9d2ce7);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .about-page p a{
+    margin-right: 0;
+    cursor: pointer;
+  }
+
+  .about-page p a:hover{
+    text-decoration: underline;
+    text-transform: translateY(-2px);
+  }
+
+
+  

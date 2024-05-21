@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap" rel="stylesheet">
+  <title>Image Gallery Project</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div class="header">
+    <button class="submit-photo-btn">Submit a photo</button>
+    <input type="text" class="search-bar" placeholder="Search...">
+  </div>
+  
+  <div class="gallery">
+      <div>
+        <p class="text">
+        Click the buttons below to <u class="syne-tactile-regular" title="filter your favorite image(s)" style="font-size: 0.9em;"> discover your favorite filter images </u> from my collection!</p>
+      </div>  
+      <div class="filter">
+        <button class="filter-btn" data-filter="all" title="Show All">All</button>
+        <button class="filter-btn" data-filter="nature" title="View Nature Images">Nature</button>
+        <button class="filter-btn" data-filter="archival" title="View Archival Images">Archival</button>
+        <button class="filter-btn" data-filter="spirituality" title="View Spirituality images">Spirituality</button>
+        <button class="filter-btn" data-filter="current-events" title="View Current Events images">Current Events</button>
+        <!-- Add more buttons for other categories -->
+      </div>
+      <div class="images">
+        <!-- Images will be dynamically added here -->
+      </div>
+  </div>
+  
+
+  <div class="footer">
+    <div style="letter-spacing: 0.1em;">&copy; Made with ❤️ by Abhi Jha!</div> <br>
+    <div class="a"> 
+        <a href="https://www.linkedin.com/in/abhisekumarjha/" target="_blank"><i class="fab fa-linkedin" style="padding-right: 5px ;"></i>LinkedIn</a>
+        <a href="https://github.com/abhisekumarjha" target="_blank"><i class="fab fa-github" style="padding-right: 5px ;"></i>GitHub</a>
+        <a href="mailto:abhijha2k20@gmail.com?subject=HelloAbhiJha!&body=Hope you're doing great!"><i class="fas fa-envelope" style="padding-right: 5px ;"></i>E-mail</a>
+    </div>
+    <div class="about-page"><p><a href="aboutpage.html">Click</a> to know more about this!</p></div>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
